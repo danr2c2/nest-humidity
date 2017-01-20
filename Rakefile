@@ -7,7 +7,7 @@ Rails.application.load_tasks
 
 
 task :collect_reading => :environment do
-  nest = NestThermostat::Nest.new(email: ENV['NEST_EMAIL'], password: ENV['NEST_PASSWORD'], temperature_scale: :celsius)
+  nest = NestThermostat::Nest.new(email: ENV['NEST_EMAIL'], password: ENV['NEST_PASSWORD'], temperature_scale: :fahrenheit)
   temperature = nest.current_temp
   humidity = nest.humidity
   
