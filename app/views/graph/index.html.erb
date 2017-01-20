@@ -4,13 +4,13 @@
 <h2>Dehumidifier is currently <%= @dehumidifier_state.on ? "on" : "off" %></h2>
 
 <h2>Inside Temperature</h2> 
-<p><%= number_with_precision @last_reading.temperature, :precision => 0 %>&deg;C</p>
+<p><%= number_with_precision @last_reading.temperature, :precision => 0 %>&deg;F</p>
 
 <h2>Inside Humidity</h2>
 <p><%= number_with_precision @last_reading.humidity, :precision => 0 %>%</p>
 
 <h2>Outside Temperature</h2>
-<p><%= number_with_precision @last_reading.outside_temperature, :precision => 0 %>&deg;C</p>
+<p><%= number_with_precision @last_reading.outside_temperature, :precision => 0 %>&deg;F</p>
 
 <h2>Outside Humidity</h2>
 <p><%= number_with_precision @last_reading.outside_humidity, :precision => 0 %>%</p>
